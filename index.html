@@ -2,10 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>golestan</title>
     <link rel="stylesheet" href="./public/css/main.css" />
+    <style>
+      html::-webkit-scrollbar{
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <!--wrapper-->
@@ -89,6 +93,11 @@
           </div>
         </div>
         <!--end-menu-->
+        <!-- scroll indicator start -->
+        <div class="w-full bg-gray-600 h-[12px]">
+          <div class="bg-red-600 h-full w-0 percent"></div>
+        </div>
+        <!-- scroll indicator end -->
       </header>
       <!--end-header-->
       <!--make-draw-->
@@ -518,13 +527,89 @@
             
           </div>
         </div>
+        <!-- products start -->
+        <div class="flex flex-col justify-center items-center bg-[--bgcolor]  text-white">
+          <!-- product 1 start -->
+          <div class="flex flex-col justify-center text-center w-11/12">
+            <div class="flex justify-center items-center">
+              <img src="./public/image/footerTEA-golestan.png" alt="tea">
+            </div>
+            <hr class="my-[5px]">
+            <h4 class="text-[27px]">چای گلستان</h4>
+            <hr class="my-[5px]">
+            <ul class="mt-[15px]">
+              <li class="text-[18px] text-gray-400 cursor-pointer">چای ممتاز هندوستان</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">چای ممتاز ارل گری</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">چای سیلان عطری</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">چای سیلان</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">چای صبحانه گلستان</li>
+            </ul>
+          </div>
+          <!-- product 1 end -->
+          <!-- product 2 start -->
+          <div class="flex flex-col justify-center text-center w-11/12">
+            <div class="flex justify-center items-center">
+              <img src="./public/image/footer-icon4.png" alt="tea">
+            </div>
+            <hr class="my-[5px]">
+            <h4 class="text-[27px]">تی بگ گلستان</h4>
+            <hr class="my-[5px]">
+            <ul class="mt-[15px]">
+              <li class="text-[18px] text-gray-400 cursor-pointer">تی بگ بلک لاین</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">تی بگ ارل گری</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">دمنوش نعناع</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">دمنوش بابونه</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">دمنوش چای سبز</li>
+            </ul>
+          </div>
+          <!-- product 2 end -->
+          <!-- product 3 start -->
+          <div class="flex flex-col justify-center text-center w-11/12">
+            <div class="flex justify-center items-center">
+              <img src="./public/image/footer-icon3.png" alt="tea">
+            </div>
+            <hr class="my-[5px]">
+            <h4 class="text-[27px]">ادویه گلستان</h4>
+            <hr class="my-[5px]">
+            <ul class="mt-[15px]">
+              <li class="text-[18px] text-gray-400 cursor-pointer">زعفران ممتاز خراسان</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">ادویه کاری</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">ادویه ماست و خیار</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">فلفل سیاه خالص</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">زردچوبه ممتاز</li>
+            </ul>
+          </div>
+          <!-- product 3 end -->
+          <!-- product 4 start -->
+          <div class="flex flex-col justify-center text-center w-11/12">
+            <div class="flex justify-center items-center">
+              <img src="./public/image/footer-icon2.png" alt="tea">
+            </div>
+            <hr class="my-[5px]">
+            <h4 class="text-[27px]">حبوبات گلستان</h4>
+            <hr class="my-[5px]">
+            <ul class="mt-[15px]">
+              <li class="text-[18px] text-gray-400 cursor-pointer">لوبیا قرمز ممتاز</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">لوبیا چیتی گلستان</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">عدس کانادایی</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">نخود زودپز کرمانشاه</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">لوبیا سفید گلستان</li>
+            </ul>
+          </div>
+          <!-- product 4 end -->
+        <!-- products end -->
       </footer>
       <!--end-footer-->
     </div>
     <!--end-wrapper-->
 
-    <script type="module" src="/main.js">
-      function myFunction(x) {
+    <script>
+      window.addEventListener("scroll",() => {
+        let scroll = document.documentElement.scrollTop;
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        document.querySelector(".percent").setAttribute("style",`width : ${scroll/height * 100}%`)
+      })
+      const myFunction = (x) => {
         x.classList.toggle("change");
       }
     </script>
