@@ -28,6 +28,9 @@
    .footer__bottum{
     background-image: url(../image/footerBG--golestan.png);
    }
+   html::-webkit-scrlollbar{
+    display: none;
+   }
 }
 :root{
     --bgcolor:#272727;
