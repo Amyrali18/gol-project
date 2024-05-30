@@ -5,19 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog</title>
     <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="shortcut icon" href="./public/image/cropped-cropped-logo-fr-1-1-180x180.png" type="image/x-icon">
 </head>
 <body>
     <!--make-wrapper-->
     <div class="wrapper dark:bg-slate-800 w-full">
   <!--make-header-->
   <header
-  class="w-full z-10 sticky top-0 h-auto bg-[--bgcolor] flex flex-col gap-y-[5px]"
+  class="w-full z-10 sticky top-0 bg-[--bgcolor] flex flex-col gap-y-[5px] desktop:justify-center desktop:items-center"
 >
-  <div
-    class="header__img sticky bg-transparent w-full desktop:w-[200px] flex justify-center pt-[5px]"
-  >
-    <img class="w-[170px] desktop:absolute desktop:top-[55px] desktop:right-[250px]" src="./public/image/logo-fr.png" alt="" />
-  </div>
   <!--make-menu-->
   <div class="menu__icon desktop:hidden">
     <label
@@ -46,7 +42,7 @@
       class="menu w-full h-auto bg-[--bgcolor] hidden mobile:flex-col items-start duration-300 peer-checked:flex"
     >
       <a
-        class="text-[--font-color]  text-[16px] font-light leading-[20px] mt-0 mr-[30px] mb-[30px] ml-0"
+        class="text-[--font-color] text-[16px] font-light leading-[20px] mt-0 mr-[30px] mb-[30px] ml-0"
         href="./index.html"
         >صفحه اصلی</a
       >
@@ -87,32 +83,30 @@
       >
     </div>
   </div>
-  
+
   <!--end-menu-->
   <!--make-deMenu-->
-  <div
-      class="menu__items w-full h-auto bg-main-back mobile:hidden desktop:flex desktop:flex-row mobile:flex-col mobile:items-start mobile:duration-300 peer-checked:flex desktop:gap-4 desktop:pt-[20px] desktop:pr-[500px]"
+  <nav class="w-full flex justify-center flex-shrink-0">
+    <div
+      class="header__img relative bg-transparent w-full flex-shrink-0 desktop:w-[200px] desktop:h-full flex justify-center pt-[5px]"
     >
-      <a
-        class="desktop:hover:text-[white] mobile:text-[16px] text-[--font-color] desktop:text-[20px] font-light leading-[20px] mobile:mt-0 mobile:mb-[30px] mobile:ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0"
-        href="./index.html"
-        >صفحه اصلی</a
-      >
-      <span
-        class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
-      ></span>
-      <div
-        class="mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
-      >
+      <img
+        class="w-[170px] desktop:absolute desktop:top-[45px]"
+        src="./public/image/logo-fr.png"
+        alt=""
+      />
+    </div>
+    <div class="menu__items w-fit flex-shrink-0 bg-main-back mobile:hidden desktop:flex desktop:flex-row mobile:flex-col mobile:items-start mobile:duration-300 peer-checked:flex desktop:gap-4">
+      <a class="text-[--font-color] mobile:text-[16px] desktop:hover:text-[white] desktop:text-[20px] font-light leading-[20px] mobile:mt-0 mobile:mb-[30px] mobile:ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0" href="./index.html">صفحه اصلی</a>
+      <span class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"></span>
+      <div class="mt-0 relative mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group">
         <a
           class="text-[--font-color] mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] desktop:hover:text-[white]"
           href="#"
           >شرکت گلستان
         </a>
         <!--make mini menu-->
-        <div
-          class="mini__menu mobile:hidden w-[180px] h-auto p-[10px] absolute bg-zinc-800 top-[85px] left-[750px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
-        >
+        <div class="mini__menu mobile:hidden w-[180px] h-auto p-[10px] absolute bg-zinc-800 top-[50px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex">
           <a
             href="#"
             class="mt-[5px] mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
@@ -158,20 +152,13 @@
         </div>
         <!--end mini menu-->
       </div>
-      <span
-        class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
-      ></span>
-      <div
-        class="mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
-      >
-        <a
-          class="text-[--font-color] mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] desktop:hover:text-[white]"
-          href="#"
-          >محصولات
+      <span class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"></span>
+      <div class="mt-0 relative mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group">
+        <a class="text-[--font-color] mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] desktop:hover:text-[white]" href="#">محصولات
         </a>
         <!--make mini menu-->
         <div
-          class="mini__menu mobile:hidden w-[180px] h-auto p-[10px] absolute bg-zinc-800 top-[85px] left-[620px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
+          class="mini__menu mobile:hidden w-[180px] h-auto p-[10px] absolute bg-zinc-800 top-[50px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
         >
           <a
             href="#"
@@ -246,53 +233,50 @@
       <span
         class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
       ></span>
-      <div
-      class="mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
-    >
-      <a
-        class="text-white mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] "
-        href="#"
-        >وبلاگ
-      </a>
-      <!--make mini menu-->
-      <div
-        class="mini__menu mobile:hidden w-[180px] h-auto p-[10px] absolute bg-zinc-800 top-[85px] left-[530px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
-      >
+      <div class="mt-0 relative mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group">
         <a
-          href="#"
-          class="mt-[5px] text-[20px] mr-[10px] text-[gray] desktop:hover:text-[white]"
-        >
-          مجله گلستان
+          class="text-white mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] desktop:hover:text-[white]"
+          href="./blog.html"
+          >وبلاگ
         </a>
-        <a
-          href="#"
-          class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
+        <!--make mini menu-->
+        <div
+          class="mini__menu mobile:hidden w-[180px] h-auto p-[10px] absolute bg-zinc-800 top-[50px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
         >
-          فرهنگ غذایی
-        </a>
-        <a
-          href="#"
-          class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
-        >
-          سلامت غذایی
-        </a>
-        <a
-          href="#"
-          class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
-        >
-          تاریخچه
-        </a>
-        <a
-          href="#"
-          class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
-        >
-          میزبانی و دیزاین
-        </a>
-        
+          <a
+            href="#"
+            class="mt-[5px] text-[20px] mr-[10px] text-[gray] desktop:hover:text-[white]"
+          >
+            مجله گلستان
+          </a>
+          <a
+            href="#"
+            class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
+          >
+            فرهنگ غذایی
+          </a>
+          <a
+            href="#"
+            class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
+          >
+            سلامت غذایی
+          </a>
+          <a
+            href="#"
+            class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
+          >
+            تاریخچه
+          </a>
+          <a
+            href="#"
+            class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
+          >
+            میزبانی و دیزاین
+          </a>
+        </div>
+        <!--end mini menu-->
       </div>
-      <!--end mini menu-->
-    </div>
-      
+
       <span
         class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
       ></span>
@@ -313,7 +297,7 @@
         class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
       ></span>
       <div
-        class="mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
+        class="mt-0 relative mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
       >
         <a
           class="text-[--font-color] mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] desktop:hover:text-[white]"
@@ -323,7 +307,7 @@
         </a>
         <!--make mini menu-->
         <div
-          class="mini__menu mobile:hidden w-auto h-auto absolute p-[20px] bg-zinc-800 top-[85px] left-[290px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
+          class="mini__menu mobile:hidden w-fit whitespace-nowrap h-auto absolute p-[20px] bg-zinc-800 top-[50px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
         >
           <a
             href="#"
@@ -356,9 +340,9 @@
         >EN</a
       >
     </div>
-  <!-- <div class="mobile:hidden mt-[20px] mr-[450px] h-[50px] w-[770px] bg-inherit z-30 desktop:flex fl">
-    
-  </div> -->
+  </nav>
+
+ 
   <!--end-deMenu-->
   <!-- scroll indicator start -->
   <div class="w-full bg-gray-600 h-[12px]">
@@ -369,12 +353,12 @@
 <!--end-header-->
 <!--make-blog-->
 <div class="blog w-full pt-[50px] dark:bg-slate-800 bg-white">
-    <h1 class="pb-[50px] desktop:pr-[250px]  text-[--golcolor] text-[30px] text-right font-thin pr-[20px]">
+    <h1 class="pb-[50px] desktop:pr-[270px]  text-[--golcolor] text-[30px] text-right font-thin pr-[20px]">
         وبلاگ
       </h1>
       <!--make-magazine-->
       <div class="magazine dark:bg-gray-700 bg-[#F7F9FB] w-full pb-[30px]">
-        <div class="magazine__main w-full dark:bg-gray-700 bg-[#F7F9FB] px-[20px] pt-[30px] pb-px desktop:flex desktop:flex-row desktop:flex-wrap desktop:justify-between desktop:px-[270px]">
+        <div class="magazine__main w-full dark:bg-gray-700 bg-[#F7F9FB] px-[20px] pt-[30px] pb-px desktop:flex desktop:flex-row desktop:flex-wrap desktop:justify-between desktop:w-[1000px] desktop:gap-1 desktop:mx-auto desktop:px-0">
           <div class="magazine__item mb-[40px] dark:bg-slate-800 w-full desktop:w-[320px] bg-white shadow-[-3px_3px_7px_0_rgba(0,0,0,0.2)]">
             <div class="top__magazine w-full">
               <img class="w-full object-cover"
@@ -484,7 +468,7 @@
             </div>
           </div>
         </div>
-        <div class="magazine__bottum dark:bg-gray-700 bg-[#F7F9FB] w-full px-[30px] pt-[30px] desktop:flex desktop:flex-row desktop:flex-wrap desktop:justify-between desktop:px-[270px] ">
+        <div class="magazine__bottum dark:bg-gray-700 bg-[#F7F9FB] w-full px-[30px] pt-[30px] desktop:flex desktop:flex-row desktop:flex-wrap desktop:justify-between desktop:w-[1000px] desktop:gap-1 desktop:mx-auto desktop:px-0">
           <div class="bottum__item dark:bg-slate-800 desktop:w-[320px] pb-px w-full shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] bg-white border border-[#dadada] mb-[40px] border-solid">
             <div class="video">
               <style>
@@ -712,27 +696,106 @@
   <!--end-cr-->
 </footer>
 <!--end-footer-->
-<a class="opacity-100 rounded-md w-[40px] h-[40px] fixed left-[20px] bottom-[20px] desktop:flex justify-center items-center" href="#"><svg class="scale-50" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m18.221 7.206 9.585 9.585a2.265 2.265 0 0 1 0 3.195l-.8.801a2.266 2.266 0 0 1-3.194 0l-7.315-7.315-7.315 7.315a2.266 2.266 0 0 1-3.194 0l-.8-.801a2.265 2.265 0 0 1 0-3.195l9.587-9.585a2.24 2.24 0 0 1 1.723-.647 2.247 2.247 0 0 1 1.723.647z" fill="#ffffff" class="fill-515151"></path></svg></a>
-<div class="sun cursor-pointer w-[40px] h-[40px] fixed left-[50px] bottom-[20px] flex justify-center items-center"><svg fill="#ffffff" height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-83.05 -83.05 373.73 373.73" xml:space="preserve" stroke="#ffffff" stroke-width="0.00207628">
+<a
+        class=" cursor-pointer w-[40px] h-[40px] fixed left-5  rounded bg-[--font-color] bottom-5 shadow-md hover:opacity-65 flex justify-center items-center"
+        href="#"
+        ><svg
+          class="scale-50"
+          viewBox="0 0 32 32"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m18.221 7.206 9.585 9.585a2.265 2.265 0 0 1 0 3.195l-.8.801a2.266 2.266 0 0 1-3.194 0l-7.315-7.315-7.315 7.315a2.266 2.266 0 0 1-3.194 0l-.8-.801a2.265 2.265 0 0 1 0-3.195l9.587-9.585a2.24 2.24 0 0 1 1.723-.647 2.247 2.247 0 0 1 1.723.647z"
+            fill="#ffffff"
+            class="fill-515151"
+          ></path></svg
+      ></a>
+      <div
+        class="sun cursor-pointer w-[40px] h-[40px] fixed right-5 rounded bg-[--font-color] bottom-5 shadow-md hover:opacity-65 flex justify-center items-center"
+      >
+        <svg
+          fill="#ffffff"
+          height="64px"
+          width="64px"
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="-83.05 -83.05 373.73 373.73"
+          xml:space="preserve"
+          stroke="#ffffff"
+          stroke-width="0.00207628"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-  
-  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-  
-  <g id="SVGRepo_iconCarrier"> <circle cx="103.814" cy="103.814" r="45.868"/> <path d="M103.814,157.183c-29.427,0-53.368-23.941-53.368-53.368s23.941-53.368,53.368-53.368s53.368,23.941,53.368,53.368 S133.241,157.183,103.814,157.183z M103.814,65.446c-21.156,0-38.368,17.212-38.368,38.368s17.212,38.368,38.368,38.368 s38.368-17.212,38.368-38.368S124.97,65.446,103.814,65.446z"/> <path d="M103.814,39.385c-4.142,0-7.5-3.358-7.5-7.5V7.5c0-4.142,3.358-7.5,7.5-7.5s7.5,3.358,7.5,7.5v24.385 C111.314,36.027,107.956,39.385,103.814,39.385z"/> <path d="M103.814,207.628c-4.142,0-7.5-3.358-7.5-7.5v-24.385c0-4.142,3.358-7.5,7.5-7.5s7.5,3.358,7.5,7.5v24.385 C111.314,204.271,107.956,207.628,103.814,207.628z"/> <path d="M200.128,111.314h-24.385c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h24.385c4.142,0,7.5,3.358,7.5,7.5 S204.271,111.314,200.128,111.314z"/> <path d="M31.885,111.314H7.5c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h24.385c4.142,0,7.5,3.358,7.5,7.5 S36.027,111.314,31.885,111.314z"/> <path d="M154.676,60.452c-1.919,0-3.839-0.732-5.303-2.197c-2.929-2.929-2.929-7.678,0-10.606l17.243-17.242 c2.929-2.929,7.678-2.93,10.606,0c2.929,2.929,2.929,7.678,0,10.606l-17.243,17.242C158.515,59.72,156.595,60.452,154.676,60.452z"/> <path d="M35.709,179.419c-1.919,0-3.839-0.732-5.303-2.197c-2.929-2.929-2.929-7.678,0-10.606l17.243-17.243 c2.929-2.929,7.678-2.929,10.606,0c2.929,2.929,2.929,7.678,0,10.606l-17.243,17.243C39.548,178.687,37.629,179.419,35.709,179.419z "/> <path d="M171.918,179.419c-1.919,0-3.839-0.732-5.303-2.197l-17.243-17.243c-2.929-2.929-2.929-7.678,0-10.606 c2.929-2.929,7.678-2.929,10.606,0l17.243,17.243c2.929,2.929,2.929,7.678,0,10.606 C175.757,178.687,173.838,179.419,171.918,179.419z"/> <path d="M52.952,60.452c-1.919,0-3.839-0.732-5.303-2.197L30.406,41.013c-2.929-2.929-2.929-7.677,0-10.606 c2.929-2.929,7.678-2.93,10.606,0l17.243,17.242c2.929,2.929,2.929,7.677,0,10.606C56.791,59.72,54.872,60.452,52.952,60.452z"/> </g>
-  
-  </svg>
-  
-</div>
-<div class="moon cursor-pointer w-[40px] h-[40px] fixed left-[60px] bottom-[20px] flex justify-center items-center"><svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
 
-  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-  
-  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-  
-  <g id="SVGRepo_iconCarrier"> <path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
-  
-  </svg></div>
+          <g id="SVGRepo_iconCarrier">
+            <circle cx="103.814" cy="103.814" r="45.868" />
+            <path
+              d="M103.814,157.183c-29.427,0-53.368-23.941-53.368-53.368s23.941-53.368,53.368-53.368s53.368,23.941,53.368,53.368 S133.241,157.183,103.814,157.183z M103.814,65.446c-21.156,0-38.368,17.212-38.368,38.368s17.212,38.368,38.368,38.368 s38.368-17.212,38.368-38.368S124.97,65.446,103.814,65.446z"
+            />
+            <path
+              d="M103.814,39.385c-4.142,0-7.5-3.358-7.5-7.5V7.5c0-4.142,3.358-7.5,7.5-7.5s7.5,3.358,7.5,7.5v24.385 C111.314,36.027,107.956,39.385,103.814,39.385z"
+            />
+            <path
+              d="M103.814,207.628c-4.142,0-7.5-3.358-7.5-7.5v-24.385c0-4.142,3.358-7.5,7.5-7.5s7.5,3.358,7.5,7.5v24.385 C111.314,204.271,107.956,207.628,103.814,207.628z"
+            />
+            <path
+              d="M200.128,111.314h-24.385c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h24.385c4.142,0,7.5,3.358,7.5,7.5 S204.271,111.314,200.128,111.314z"
+            />
+            <path
+              d="M31.885,111.314H7.5c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h24.385c4.142,0,7.5,3.358,7.5,7.5 S36.027,111.314,31.885,111.314z"
+            />
+            <path
+              d="M154.676,60.452c-1.919,0-3.839-0.732-5.303-2.197c-2.929-2.929-2.929-7.678,0-10.606l17.243-17.242 c2.929-2.929,7.678-2.93,10.606,0c2.929,2.929,2.929,7.678,0,10.606l-17.243,17.242C158.515,59.72,156.595,60.452,154.676,60.452z"
+            />
+            <path
+              d="M35.709,179.419c-1.919,0-3.839-0.732-5.303-2.197c-2.929-2.929-2.929-7.678,0-10.606l17.243-17.243 c2.929-2.929,7.678-2.929,10.606,0c2.929,2.929,2.929,7.678,0,10.606l-17.243,17.243C39.548,178.687,37.629,179.419,35.709,179.419z "
+            />
+            <path
+              d="M171.918,179.419c-1.919,0-3.839-0.732-5.303-2.197l-17.243-17.243c-2.929-2.929-2.929-7.678,0-10.606 c2.929-2.929,7.678-2.929,10.606,0l17.243,17.243c2.929,2.929,2.929,7.678,0,10.606 C175.757,178.687,173.838,179.419,171.918,179.419z"
+            />
+            <path
+              d="M52.952,60.452c-1.919,0-3.839-0.732-5.303-2.197L30.406,41.013c-2.929-2.929-2.929-7.677,0-10.606 c2.929-2.929,7.678-2.93,10.606,0l17.243,17.242c2.929,2.929,2.929,7.677,0,10.606C56.791,59.72,54.872,60.452,52.952,60.452z"
+            />
+          </g>
+        </svg>
+      </div>
+      <div
+        class="moon cursor-pointer w-[40px] h-[40px] fixed right-5 rounded bg-[--font-color] bottom-5 shadow-md hover:opacity-65 flex justify-center items-center "
+      >
+        <svg
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
+      </div>
     </div>
     <!--end-wrapper-->
     <script src="./public/js/main.js"></script>

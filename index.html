@@ -5,20 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>golestan</title>
     <link rel="stylesheet" href="./public/css/main.css" />
-    
+    <link rel="shortcut icon" href="./public/image/cropped-cropped-logo-fr-1-1-180x180.png" type="image/x-icon">
   </head>
   <body>
     <!--wrapper-->
     <div class="wrapper w-full dark:bg-slate-800">
       <!--make-header-->
       <header
-        class="w-full z-10 sticky top-0 h-auto bg-[--bgcolor] flex flex-col gap-y-[5px]"
+        class="w-full z-10 sticky top-0 bg-[--bgcolor] flex flex-col gap-y-[5px] desktop:justify-center desktop:items-center"
       >
-        <div
-          class="header__img sticky bg-transparent w-full desktop:w-[200px] flex justify-center pt-[5px]"
-        >
-          <img class="w-[170px] desktop:absolute desktop:top-[55px] desktop:right-[250px]" src="./public/image/logo-fr.png" alt="" />
-        </div>
         <!--make-menu-->
         <div class="menu__icon desktop:hidden">
           <label
@@ -88,32 +83,30 @@
             >
           </div>
         </div>
-        
+
         <!--end-menu-->
         <!--make-deMenu-->
-        <div
-            class="menu__items w-full h-auto bg-main-back mobile:hidden desktop:flex desktop:flex-row mobile:flex-col mobile:items-start mobile:duration-300 peer-checked:flex desktop:gap-4 desktop:pt-[20px] desktop:pr-[500px]"
+        <nav class="w-full flex justify-center flex-shrink-0">
+          <div
+            class="header__img relative bg-transparent w-full flex-shrink-0 desktop:w-[200px] desktop:h-full flex justify-center pt-[5px]"
           >
-            <a
-              class="text-white mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] mobile:mt-0 mobile:mb-[30px] mobile:ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0"
-              href="#"
-              >صفحه اصلی</a
-            >
-            <span
-              class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
-            ></span>
-            <div
-              class="mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
-            >
+            <img
+              class="w-[170px] desktop:absolute desktop:top-[45px]"
+              src="./public/image/logo-fr.png"
+              alt=""
+            />
+          </div>
+          <div class="menu__items w-fit flex-shrink-0 bg-main-back mobile:hidden desktop:flex desktop:flex-row mobile:flex-col mobile:items-start mobile:duration-300 peer-checked:flex desktop:gap-4">
+            <a class="text-white mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] mobile:mt-0 mobile:mb-[30px] mobile:ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0" href="#">صفحه اصلی</a>
+            <span class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"></span>
+            <div class="mt-0 relative mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group">
               <a
                 class="text-[--font-color] mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] desktop:hover:text-[white]"
                 href="#"
                 >شرکت گلستان
               </a>
               <!--make mini menu-->
-              <div
-                class="mini__menu mobile:hidden w-[180px] h-auto p-[10px] absolute bg-zinc-800 top-[85px] left-[750px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
-              >
+              <div class="mini__menu mobile:hidden w-[180px] h-auto p-[10px] absolute bg-zinc-800 top-[50px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex">
                 <a
                   href="#"
                   class="mt-[5px] mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
@@ -159,20 +152,13 @@
               </div>
               <!--end mini menu-->
             </div>
-            <span
-              class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
-            ></span>
-            <div
-              class="mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
-            >
-              <a
-                class="text-[--font-color] mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] desktop:hover:text-[white]"
-                href="#"
-                >محصولات
+            <span class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"></span>
+            <div class="mt-0 relative mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group">
+              <a class="text-[--font-color] mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] desktop:hover:text-[white]" href="#">محصولات
               </a>
               <!--make mini menu-->
               <div
-                class="mini__menu mobile:hidden w-[180px] h-auto p-[10px] absolute bg-zinc-800 top-[85px] left-[620px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
+                class="mini__menu mobile:hidden w-[180px] h-auto p-[10px] absolute bg-zinc-800 top-[50px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
               >
                 <a
                   href="#"
@@ -247,53 +233,50 @@
             <span
               class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
             ></span>
-            <div
-            class="mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
-          >
-            <a
-              class="text-[--font-color] mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] desktop:hover:text-[white]"
-              href="./blog.html"
-              >وبلاگ
-            </a>
-            <!--make mini menu-->
-            <div
-              class="mini__menu mobile:hidden w-[180px] h-auto p-[10px] absolute bg-zinc-800 top-[85px] left-[530px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
-            >
+            <div class="mt-0 relative mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group">
               <a
-                href="#"
-                class="mt-[5px] text-[20px] mr-[10px] text-[gray] desktop:hover:text-[white]"
-              >
-                مجله گلستان
+                class="text-[--font-color] mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] desktop:hover:text-[white]"
+                href="./blog.html"
+                >وبلاگ
               </a>
-              <a
-                href="#"
-                class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
+              <!--make mini menu-->
+              <div
+                class="mini__menu mobile:hidden w-[180px] h-auto p-[10px] absolute bg-zinc-800 top-[50px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
               >
-                فرهنگ غذایی
-              </a>
-              <a
-                href="#"
-                class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
-              >
-                سلامت غذایی
-              </a>
-              <a
-                href="#"
-                class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
-              >
-                تاریخچه
-              </a>
-              <a
-                href="#"
-                class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
-              >
-                میزبانی و دیزاین
-              </a>
-              
+                <a
+                  href="#"
+                  class="mt-[5px] text-[20px] mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  مجله گلستان
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
+                >
+                  فرهنگ غذایی
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
+                >
+                  سلامت غذایی
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
+                >
+                  تاریخچه
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[20px] text-[gray] desktop:hover:text-[white]"
+                >
+                  میزبانی و دیزاین
+                </a>
+              </div>
+              <!--end mini menu-->
             </div>
-            <!--end mini menu-->
-          </div>
-            
+
             <span
               class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
             ></span>
@@ -314,7 +297,7 @@
               class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
             ></span>
             <div
-              class="mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
+              class="mt-0 relative mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
             >
               <a
                 class="text-[--font-color] mobile:text-[16px] desktop:text-[20px] font-light leading-[20px] desktop:hover:text-[white]"
@@ -324,7 +307,7 @@
               </a>
               <!--make mini menu-->
               <div
-                class="mini__menu mobile:hidden w-auto h-auto absolute p-[20px] bg-zinc-800 top-[85px] left-[290px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
+                class="mini__menu mobile:hidden w-fit whitespace-nowrap h-auto absolute p-[20px] bg-zinc-800 top-[50px] flex-col gap-y-[20px] desktop:hidden desktop:group-hover:flex"
               >
                 <a
                   href="#"
@@ -356,11 +339,10 @@
               href="#"
               >EN</a
             >
-           
           </div>
-        <!-- <div class="mobile:hidden mt-[20px] mr-[450px] h-[50px] w-[770px] bg-inherit z-30 desktop:flex fl">
-          
-        </div> -->
+        </nav>
+
+       
         <!--end-deMenu-->
         <!-- scroll indicator start -->
         <div class="w-full bg-gray-600 h-[12px]">
@@ -371,10 +353,10 @@
       <!--end-header-->
       <!--make-draw-->
       <div
-        class="draw w-full h-auto bg-gradient-to-br dark:bg-slate-800 desktop:flex desktop:flex-row  bg-[#d3d3d3]"
+        class="draw w-full h-auto bg-gradient-to-br dark:bg-slate-800 justify-center desktop:flex desktop:flex-row bg-[#d3d3d3]"
       >
         <div
-          class="top__draw w-full desktop:w-[500px] desktop:pt-[50px] desktop:mr-[200px] bg-transparent flex flex-col pt-[20px] pr-[45px] "
+          class="top__draw w-full desktop:w-[500px] desktop:pt-[50px] desktop:mr-[200px] bg-transparent flex flex-col pt-[20px] pr-[45px]"
         >
           <h2
             class="text-[36px] font-light text-[--golcolor] text-right leading-[1]"
@@ -393,7 +375,9 @@
             کشی روی بسته به شماره 30007405 در قرعه کشی‌های ماهیانه سال 1402 شرکت
             کنند. نگهداری از بسته‌بندی محصول برای اهدای جایزه الزامی است.
           </p>
-          <div class="button__info w-full mt-[20px] desktop:mb-[80px] flex justify-start">
+          <div
+            class="button__info w-full mt-[20px] desktop:mb-[80px] flex justify-start"
+          >
             <a
               href="#"
               class="button text-[20px] bg-[#ffffff] dark:bg-slate-800 rounded-lg border border-[#c8c8c8] border-solid text-[#7c7d7e] py-[5px] px-[26px]"
@@ -401,7 +385,9 @@
             >
           </div>
         </div>
-        <div class="image__draw bg-transparent mobile:w-full desktop:w-[350px] desktop:h-[400px] desktop:mr-[200px] desktop:p-0 mobile:pr-[70px]">
+        <div
+          class="image__draw bg-transparent mobile:w-full desktop:w-[350px] desktop:h-[400px] desktop:mr-[200px] desktop:p-0 mobile:pr-[70px]"
+        >
           <img
             class="mobile:w-[300px] desktop:w-full desktop:h-[400px] mobile:h-[340]"
             src="./public/image/tea-pic1.png"
@@ -409,13 +395,17 @@
           />
         </div>
       </div>
-     <hr class="bg-[--font-color]  mobile:hidden desktop:block w-[97%] m-auto h-px mt-[15px]">
+      <hr
+        class="bg-[--font-color] mobile:hidden desktop:block w-[97%] m-auto h-px mt-[15px]"
+      />
       <!--end-draw-->
       <!--make-introduce-->
       <div
         class="introduce w-full desktop:w-[815px] desktop:mx-auto desktop:pt-[70px] desktop:px-[60px] dark:bg-slate-800 bg-white pt-[30px] pr-[18px] pb-[10px] pl-[18px]"
       >
-        <h1 class="text-[--golcolor] desktop:mb-[10px] text-[22px] text-right font-semibold">
+        <h1
+          class="text-[--golcolor] desktop:mb-[10px] text-[22px] text-right font-semibold"
+        >
           معرفی گلستان
         </h1>
         <h2
@@ -439,7 +429,9 @@
           بازاریابی و مشتری محوری از جمله عوامل مهم در استراتژی
           <span class="text-[--golcolor]">شرکت گلستان</span> است.
         </h2>
-        <h1 class="text-[--golcolor] desktop:mb-[10px] text-[22px] text-right font-semibold">
+        <h1
+          class="text-[--golcolor] desktop:mb-[10px] text-[22px] text-right font-semibold"
+        >
           محصولات گلستان
         </h1>
         <h2
@@ -451,47 +443,59 @@
           تجاری خاطره محصولاتی ممتاز و منحصر بفرد دارند و با اطمینان از نهایت
           کیفیت این نام تجاری حمایت می‌کنند.
         </h2>
-         <!--make part-intro-->
-         <div
-         class=" mobile:hidden desktop:flex flex-row gap-x-[25px] items-center mt-[150px] mb-[150px] justify-center"
-       >
-         <div class="part w-[185px] h-[250px]">
-           <img class="w-[185px]" src="./public/image/p1.png" alt="" />
-           <p class="py-[20px] text-center text-gray-400 text-[22px]">سرمایه انسانی</p>
-           <span class="w-[100%] m-auto bg-gray-400 h-px block rounded-sm">
-           </span>
-         </div>
-         <div class="part w-[185px] h-[250px]">
-           <img src="./public/image/p2.png" alt="" />
-           <p class="py-[20px] text-center text-gray-400 text-[22px]">مراکز فروش</p>
-           <span class="w-[100%] m-auto bg-gray-400 h-px block rounded-sm">
-           </span>
-         </div>
-         <div class="part w-[185px] h-[250px]">
-           <img src="./public/image/p3.png" alt="" />
-           <p class="py-[20px] text-center text-gray-400 text-[22px]">مشتریان گلستان</p>
-           <span class="w-[100%] m-auto bg-gray-400 h-px block rounded-sm">
-           </span>
-         </div>
-         <div class="part w-[185px] h-[250px]">
-           <img src="./public/image/p4.png" alt="" />
-           <p class="py-[20px] text-center text-gray-400 text-[22px]">محصولات گلستان</p>
-           <span class="w-[100%] m-auto bg-gray-400 h-px block rounded-sm">
-           </span>
-         </div>
-       </div>
-       <!--end part-intro-->
+        <!--make part-intro-->
+        <div
+          class="mobile:hidden desktop:flex flex-row gap-x-[25px] items-center mt-[150px] mb-[150px] justify-center"
+        >
+          <div class="part w-[185px] h-[250px]">
+            <img class="w-[185px]" src="./public/image/p1.png" alt="" />
+            <p class="py-[20px] text-center text-gray-400 text-[22px]">
+              سرمایه انسانی
+            </p>
+            <span class="w-[100%] m-auto bg-gray-400 h-px block rounded-sm">
+            </span>
+          </div>
+          <div class="part w-[185px] h-[250px]">
+            <img src="./public/image/p2.png" alt="" />
+            <p class="py-[20px] text-center text-gray-400 text-[22px]">
+              مراکز فروش
+            </p>
+            <span class="w-[100%] m-auto bg-gray-400 h-px block rounded-sm">
+            </span>
+          </div>
+          <div class="part w-[185px] h-[250px]">
+            <img src="./public/image/p3.png" alt="" />
+            <p class="py-[20px] text-center text-gray-400 text-[22px]">
+              مشتریان گلستان
+            </p>
+            <span class="w-[100%] m-auto bg-gray-400 h-px block rounded-sm">
+            </span>
+          </div>
+          <div class="part w-[185px] h-[250px]">
+            <img src="./public/image/p4.png" alt="" />
+            <p class="py-[20px] text-center text-gray-400 text-[22px]">
+              محصولات گلستان
+            </p>
+            <span class="w-[100%] m-auto bg-gray-400 h-px block rounded-sm">
+            </span>
+          </div>
+        </div>
+        <!--end part-intro-->
       </div>
       <!--end-introduce-->
       <hr class="w-11/12 mx-auto mb-[30px] text-[#4a4a4a]" />
       <!--make-rice-->
-      <div class="rice w-full desktop:bg-[#E9D69F] dark:bg-green-900 pb-[20px] relative">
+      <div
+        class="rice w-full desktop:bg-[#E9D69F] dark:bg-green-900 pb-[20px] relative"
+      >
         <img
-          class="w-full object-contain "
+          class="w-full object-contain"
           src="./public/image/rice-golesan.jpg"
           alt="rice-golesan"
         />
-        <div class="rice__text w-full desktop:w-[290px] desktop:h-[100px] desktop:top-[520px] desktop:right-[25%] absolute top-[70%] bg-[--golcolor]">
+        <div
+          class="rice__text w-full desktop:w-[290px] desktop:h-[100px] desktop:top-[520px] desktop:right-[25%] absolute top-[70%] bg-[--golcolor]"
+        >
           <div class="top__rice bg-inherit py-[2px] px-[20px]">
             <h1 class="text-[whitesmoke] font-thin text-right text-[35px]">
               برنج گلستان
@@ -507,7 +511,9 @@
         </div>
       </div>
       <!--end-rice-->
-      <hr class="mobile:hidden desktop:block w-11/12 mx-auto mt-[30px] text-[#4a4a4a]" />
+      <hr
+        class="mobile:hidden desktop:block w-11/12 mx-auto mt-[30px] text-[#4a4a4a]"
+      />
 
       <!--make-iranian__food-->
       <div
@@ -542,14 +548,18 @@
       </div>
       <!--end-iranian__food-->
       <!--make-tea-->
-      <div class="tea w-full ">
-        <div class="tea__img desktop:bg-[#E9D69F] dark:bg-green-900 desktop:pb-[20px] w-full relative mb-[60px]">
+      <div class="tea w-full">
+        <div
+          class="tea__img desktop:bg-[#E9D69F] dark:bg-green-900 desktop:pb-[20px] w-full relative mb-[60px]"
+        >
           <img
             class="w-full object-contain"
             src="./public/image/tea-golestan.jpg"
             alt="tea"
           />
-          <div class="tea__text w-full desktop:w-[290px] desktop:h-[100px] desktop:top-[520px] desktop:right-[25%] absolute top-[70%] bg-[--golcolor]">
+          <div
+            class="tea__text w-full desktop:w-[290px] desktop:h-[100px] desktop:top-[520px] desktop:right-[25%] absolute top-[70%] bg-[--golcolor]"
+          >
             <div class="top__tea bg-inherit py-[2px] px-[20px]">
               <h1 class="text-[whitesmoke] text-right font-thin text-[35px]">
                 چای گلستان
@@ -564,12 +574,16 @@
             </div>
           </div>
         </div>
-        <hr class="mobile:hidden desktop:block w-11/12 mx-auto mt-[20px] text-[#4a4a4a]" />
+        <hr
+          class="mobile:hidden desktop:block w-11/12 mx-auto mt-[20px] text-[#4a4a4a]"
+        />
 
         <div
           class="tea__introduce w-full desktop:w-[700px] desktop:mx-auto bg-white dark:bg-slate-800 mt-[60px] px-[18px] pt-[30px] pb-[10px]"
         >
-          <h1 class="text-[--golcolor] desktop:mb-[20px] text-[22px] text-right font-semibold">
+          <h1
+            class="text-[--golcolor] desktop:mb-[20px] text-[22px] text-right font-semibold"
+          >
             سابقه‌ای به قدمت یک عمر
           </h1>
           <h2
@@ -604,13 +618,17 @@
       <!--end-tea-->
       <!--make-peste-->
       <div class="peste w-full">
-        <div class="peste__img  desktop:bg-[#E9D69F] dark:bg-green-900 desktop:pb-[20px] w-full relative mb-[60px]">
+        <div
+          class="peste__img desktop:bg-[#E9D69F] dark:bg-green-900 desktop:pb-[20px] w-full relative mb-[60px]"
+        >
           <img
             class="w-full object-contain"
             src="./public/image/peste-golestan.jpg"
             alt="peste"
           />
-          <div class="peste__text desktop:w-[290px] desktop:h-[100px] desktop:top-[520px] desktop:right-[25%] w-full absolute top-[70%] bg-[--golcolor]">
+          <div
+            class="peste__text desktop:w-[290px] desktop:h-[100px] desktop:top-[520px] desktop:right-[25%] w-full absolute top-[70%] bg-[--golcolor]"
+          >
             <div class="top__peste bg-inherit py-[2px] px-[20px]">
               <h1 class="text-[whitesmoke] text-right font-thin text-[35px]">
                 پسته گلستان
@@ -628,7 +646,9 @@
         <div
           class="peste__introduce w-full desktop:w-[700px] desktop:mx-auto bg-white dark:bg-slate-800 mt-[60px] px-[18px] pt-[30px] pb-[10px]"
         >
-          <h1 class="text-[--golcolor] text-[22px] desktop:mb-[20px] text-right font-semibold">
+          <h1
+            class="text-[--golcolor] text-[22px] desktop:mb-[20px] text-right font-semibold"
+          >
             آجيل‌های خوش خنده
           </h1>
           <h2
@@ -661,80 +681,121 @@
       <div class="mainBG w-full z-50 h-[250px] bg-center mb-[40px]"></div>
       <!--end-mainBG-->
       <!--make-magazine-->
-      <div class="magazine w-full pb-[30px] ">
-        <h1 class="text-[25px] text-[--golcolor] text-right mr-[30px] mb-[40px] desktop:mr-[250px] font-semibold">مجله گلستان</h1>
-        <div class="magazine__main w-full bg-[#cde4b0] dark:bg-green-900 px-[20px] pt-[30px] pb-px desktop:flex desktop:flex-row-reverse desktop:justify-between desktop:px-[270px] desktop:pt-[100px] desktop:pb-[50px] ">
-          <div class="magazine__item dark:bg-slate-800 mb-[40px] w-full desktop:w-[320px] bg-white shadow-[-3px_3px_7px_0_rgba(0,0,0,0.2)]">
+      <div class="magazine w-full pb-[30px]">
+        <h1
+          class="text-[25px] text-[--golcolor] text-right mr-[30px] mb-[40px] desktop:mr-[250px] font-semibold"
+        >
+          مجله گلستان
+        </h1>
+        <div
+          class="magazine__main w-full bg-[#cde4b0] dark:bg-green-900 px-[20px] pt-[30px] pb-px desktop:flex desktop:flex-row-reverse desktop:justify-between desktop:px-[270px] desktop:pt-[100px] desktop:pb-[50px]"
+        >
+          <div
+            class="magazine__item dark:bg-slate-800 mb-[40px] w-full desktop:w-[320px] bg-white shadow-[-3px_3px_7px_0_rgba(0,0,0,0.2)]"
+          >
             <div class="top__magazine w-full">
-              <img class="w-full object-cover"
+              <img
+                class="w-full object-cover"
                 src="./public/image/chilakile-golestan.jpg"
                 alt="chilakile"
               />
             </div>
             <div class="bottum__magazine w-full py-[30px] px-[20px]">
-              <h1 class="main__text text-[--golcolor] text-[24px] text-right font-thin mb-[20px]">چیلاکیله</h1>
-              <h2 class=" text-[18px] text-justify leading-9 font-thin mb-[40px] mt-[10px] text-[--font-color]">
+              <h1
+                class="main__text text-[--golcolor] text-[24px] text-right font-thin mb-[20px]"
+              >
+                چیلاکیله
+              </h1>
+              <h2
+                class="text-[18px] text-justify leading-9 font-thin mb-[40px] mt-[10px] text-[--font-color]"
+              >
                 احتمالا نام چیلا کیله را نشنیده باشید ولی اگر یکبار این غذای
                 فوق‌العاده خوشمزه را تهیه کنید و نوش جان کنید جزئی جدانشدنی از
                 فهرست
               </h2>
               <div class="magazine__bottun w-full">
-                <a class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#c8c8c8] border-solid  py-[5px] px-[24px]" href="#"> ادامه مطلب </a>
+                <a
+                  class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#c8c8c8] border-solid py-[5px] px-[24px]"
+                  href="#"
+                >
+                  ادامه مطلب
+                </a>
               </div>
             </div>
           </div>
-          <div class="magazine__item dark:bg-slate-800 desktop:w-[320px] mb-[40px] w-full bg-white shadow-[-3px_3px_7px_0_rgba(0,0,0,0.2)]">
+          <div
+            class="magazine__item dark:bg-slate-800 desktop:w-[320px] mb-[40px] w-full bg-white shadow-[-3px_3px_7px_0_rgba(0,0,0,0.2)]"
+          >
             <div class="top__magazine w-full">
-              <img  class="w-full object-cover" src="./public/image/soup-golestan.jpg" alt="chilakile" />
+              <img
+                class="w-full object-cover"
+                src="./public/image/soup-golestan.jpg"
+                alt="chilakile"
+              />
             </div>
             <div class="bottum__magazine w-full py-[30px] px-[20px]">
-              <h1 class="main__text text-[--golcolor] text-[24px] text-right font-thin mb-[20px]">سوپ مکزیکی</h1>
-              <h2 class=" text-[18px] text-justify leading-9 font-thin mb-[40px] mt-[10px] text-[--font-color]">
+              <h1
+                class="main__text text-[--golcolor] text-[24px] text-right font-thin mb-[20px]"
+              >
+                سوپ مکزیکی
+              </h1>
+              <h2
+                class="text-[18px] text-justify leading-9 font-thin mb-[40px] mt-[10px] text-[--font-color]"
+              >
                 گوشت بوقلمون را در یک ماهیتابه بزرگ ریخته، آب روی آن بریزید تا
                 روی آن را بپوشاند و به مدت نیم ساعت آن را بپزید. گوشت را از مایع
                 آن بیرون آورده…
               </h2>
               <div class="magazine__bottun w-full">
-                <a class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#c8c8c8] border-solid  py-[5px] px-[24px]" href="#"> ادامه مطلب </a>
+                <a
+                  class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#c8c8c8] border-solid py-[5px] px-[24px]"
+                  href="#"
+                >
+                  ادامه مطلب
+                </a>
               </div>
             </div>
           </div>
           <div
-          class="magazine__item  desktop:w-[320px] mobile:hidden desktop:block mb-[40px] w-full bg-white shadow-[-3px_3px_7px_0_rgba(0,0,0,0.2)] dark:bg-slate-800"
-        >
-          <div class="top__magazine w-full">
-            <img
-              class="w-full object-cover"
-              src="./public/image/macaroni-golestan.jpg"
-              alt="makaroni"
-            />
-          </div>
-          <div class="bottum__magazine w-full py-[30px] px-[20px]">
-            <h1
-              class="main__text text-[--golcolor] text-[24px] text-right font-thin mb-[20px]"
-            >
-              ماکارونی با سبزیجات
-            </h1>
-            <h2
-              class="text-[18px] text-justify leading-9 font-thin mb-[40px] mt-[10px] text-[--font-color]"
-            >
-              بتدا ماکارانی‌ها را در ظرفی‌ به‌ همراه‌ آب‌، روغن‌ مایع‌ و نمک‌
-              می‌ریزیم‌ تا کمی‌ بپزد. در این‌ حین‌ پیازها را خرد کرده‌ و روی‌
-              روغن‌ تفت‌ می‌دهیم‌ تا طلایی‌ شود…
-            </h2>
-            <div class="magazine__bottun w-full">
-              <a
-                class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#c8c8c8] border-solid py-[5px] px-[24px]"
-                href="#"
+            class="magazine__item desktop:w-[320px] mobile:hidden desktop:block mb-[40px] w-full bg-white shadow-[-3px_3px_7px_0_rgba(0,0,0,0.2)] dark:bg-slate-800"
+          >
+            <div class="top__magazine w-full">
+              <img
+                class="w-full object-cover"
+                src="./public/image/macaroni-golestan.jpg"
+                alt="makaroni"
+              />
+            </div>
+            <div class="bottum__magazine w-full py-[30px] px-[20px]">
+              <h1
+                class="main__text text-[--golcolor] text-[24px] text-right font-thin mb-[20px]"
               >
-                ادامه مطلب
-              </a>
+                ماکارونی با سبزیجات
+              </h1>
+              <h2
+                class="text-[18px] text-justify leading-9 font-thin mb-[40px] mt-[10px] text-[--font-color]"
+              >
+                بتدا ماکارانی‌ها را در ظرفی‌ به‌ همراه‌ آب‌، روغن‌ مایع‌ و نمک‌
+                می‌ریزیم‌ تا کمی‌ بپزد. در این‌ حین‌ پیازها را خرد کرده‌ و روی‌
+                روغن‌ تفت‌ می‌دهیم‌ تا طلایی‌ شود…
+              </h2>
+              <div class="magazine__bottun w-full">
+                <a
+                  class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#c8c8c8] border-solid py-[5px] px-[24px]"
+                  href="#"
+                >
+                  ادامه مطلب
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        </div>
-        <div class="magazine__bottum dark:bg-green-900 desktop:flex desktop:flex-row desktop:justify-between desktop:px-[270px] desktop:pt-[100px] desktop:pb-[50px] w-full px-[30px] pt-[30px] ">
-          <div class="bottum__item dark:bg-slate-800 desktop:w-[320px]  pb-px w-full shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] bg-white border border-[#dadada] mb-[40px] border-solid">
+        <div
+          class="magazine__bottum dark:bg-green-900 desktop:flex desktop:flex-row desktop:justify-between desktop:px-[270px] desktop:pt-[100px] desktop:pb-[50px] w-full px-[30px] pt-[30px]"
+        >
+          <div
+            class="bottum__item dark:bg-slate-800 desktop:w-[320px] pb-px w-full shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] bg-white border border-[#dadada] mb-[40px] border-solid"
+          >
             <div class="video">
               <style>
                 .h_iframe-aparat_embed_frame {
@@ -764,18 +825,30 @@
               </div>
             </div>
             <div class="bottum__magazine w-full py-[30px] px-[20px]">
-              <h1 class="main__text text-[--golcolor] text-[24px] font-thin text-right mb-[20px]">سالاد نودل</h1>
-              <h2 class="text-[17px] leading-[30px] text-[--font-color] font-thin text-justify mt-[10px] mb-[40px]">
+              <h1
+                class="main__text text-[--golcolor] text-[24px] font-thin text-right mb-[20px]"
+              >
+                سالاد نودل
+              </h1>
+              <h2
+                class="text-[17px] leading-[30px] text-[--font-color] font-thin text-justify mt-[10px] mb-[40px]"
+              >
                 نودل هاتی کارا یك میان‌وعده‌ی مغذی، در هر موقعیتی كه باشید با
                 كمی آب جوش و یك نودل هاتی‌كارا می‌توانید از یك غذای سالم و
                 خوشمزه لذت ببرید.
               </h2>
               <div class="magazine__bottun w-full">
-                <a class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#c8c8c8] border-solid  py-[5px] px-[24px]" href="#">ویدیو های بیشتر</a>
+                <a
+                  class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#c8c8c8] border-solid py-[5px] px-[24px]"
+                  href="#"
+                  >ویدیو های بیشتر</a
+                >
               </div>
             </div>
           </div>
-          <div class="bottum__item dark:bg-slate-800 desktop:block mobile:hidden desktop:w-[320px] pb-px w-full shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] bg-white border border-[#dadada] mb-[40px] border-solid">
+          <div
+            class="bottum__item dark:bg-slate-800 desktop:block mobile:hidden desktop:w-[320px] pb-px w-full shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] bg-white border border-[#dadada] mb-[40px] border-solid"
+          >
             <div class="video">
               <style>
                 .h_iframe-aparat_embed_frame {
@@ -805,18 +878,31 @@
               </div>
             </div>
             <div class="bottum__magazine w-full py-[30px] px-[20px]">
-              <h1 class="main__text text-[--golcolor] text-[24px] font-thin text-right mb-[20px]">اینستاگرام هاتی نودل</h1>
-              <h2 class="text-[17px] leading-[30px] text-[--font-color] font-thin text-justify mt-[10px] mb-[40px]">
+              <h1
+                class="main__text text-[--golcolor] text-[24px] font-thin text-right mb-[20px]"
+              >
+                اینستاگرام هاتی نودل
+              </h1>
+              <h2
+                class="text-[17px] leading-[30px] text-[--font-color] font-thin text-justify mt-[10px] mb-[40px]"
+              >
                 نودل‌های هاتی كارا را می‌توان جایگزین سالمی برای غذاهای فست‌فودی
                 دانست. طعم عالی،‌ ارزش غذایی بالا و قیمت مناسب از این محصول غذای
                 سالم و كاملی ساخته است.
               </h2>
               <div class="magazine__bottun w-full">
-                <a class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#c8c8c8] border-solid  py-[5px] px-[24px]" href="#"> ادامه مطلب </a>
+                <a
+                  class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#c8c8c8] border-solid py-[5px] px-[24px]"
+                  href="#"
+                >
+                  ادامه مطلب
+                </a>
               </div>
             </div>
           </div>
-          <div class="bottum__item dark:bg-slate-800 desktop:w-[320px] pb-px w-full shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] bg-white border border-[#dadada] mb-[40px] border-solid">
+          <div
+            class="bottum__item dark:bg-slate-800 desktop:w-[320px] pb-px w-full shadow-[-3px_3px_3px_0_rgba(0,0,0,0.1)] bg-white border border-[#dadada] mb-[40px] border-solid"
+          >
             <div class="video">
               <style>
                 .h_iframe-aparat_embed_frame {
@@ -846,173 +932,378 @@
               </div>
             </div>
             <div class="bottum__magazine w-full py-[30px] px-[20px]">
-              <h1 class="main__text text-[--golcolor] text-[24px] font-thin text-right mb-[20px]">اینستاگرام هاتی نودل</h1>
-              <h2 class="text-[17px] leading-[30px] text-[--font-color] font-thin text-justify mt-[10px] mb-[40px]">
+              <h1
+                class="main__text text-[--golcolor] text-[24px] font-thin text-right mb-[20px]"
+              >
+                اینستاگرام هاتی نودل
+              </h1>
+              <h2
+                class="text-[17px] leading-[30px] text-[--font-color] font-thin text-justify mt-[10px] mb-[40px]"
+              >
                 نودل‌های هاتی كارا را می‌توان جایگزین سالمی برای غذاهای فست‌فودی
                 دانست. طعم عالی،‌ ارزش غذایی بالا و قیمت مناسب از این محصول غذای
                 سالم و كاملی ساخته است.
               </h2>
               <div class="magazine__bottun w-full">
-                <a class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#c8c8c8] border-solid  py-[5px] px-[24px]" href="#"> ادامه مطلب </a>
+                <a
+                  class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#c8c8c8] border-solid py-[5px] px-[24px]"
+                  href="#"
+                >
+                  ادامه مطلب
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!--end-magazine-->
-       <!--make-sociality-->
-       <div class="sociality w-full">
-        <div class="responsibility w-full bg-[#105153] pt-[250px] desktop:relative">
-          <h2 class="text-[#d5ece1] leading-[35px] text-[22px] font-thin text-center mb-[10px] w-full">مسئوليت‌های اجتماعی شركت گلستان</h2>
+      <!--make-sociality-->
+      <div class="sociality w-full">
+        <div
+          class="responsibility w-full bg-[#105153] pt-[250px] desktop:relative"
+        >
+          <h2
+            class="text-[#d5ece1] leading-[35px] text-[22px] font-thin text-center mb-[10px] w-full"
+          >
+            مسئوليت‌های اجتماعی شركت گلستان
+          </h2>
           <div class="hr w-full h-px bg-[#07787C]"></div>
           <div class="responsibility__main mb-[5px] w-full">
-            <div class="responsibility__main__top w-full desktop:flex desktop:justify-center desktop:flex-row-reverse">
-              <span class="text-[#009da2] text-[40px] not-italic font-thin">Golestan</span>
-              <span class="text-[#00d8df] text-[25px] desktop:mt-[15px] desktop:ml-[5px] not-italic font-thin mr-2">Social Responsibility</span>
+            <div
+              class="responsibility__main__top w-full desktop:flex desktop:justify-center desktop:flex-row-reverse"
+            >
+              <span class="text-[#009da2] text-[40px] not-italic font-thin"
+                >Golestan</span
+              >
+              <span
+                class="text-[#00d8df] text-[25px] desktop:mt-[15px] desktop:ml-[5px] not-italic font-thin mr-2"
+                >Social Responsibility</span
+              >
             </div>
-        
-        <div class="responsibility__main__bottum text-[#BCBEC0] w-full text-center text-[22px]">
+
+            <div
+              class="responsibility__main__bottum text-[#BCBEC0] w-full text-center text-[22px]"
+            >
               Mahdi Hospital
             </div>
           </div>
-          <div class="responsibility__img mb-[70px] desktop:mb-[30px] desktop:h-[300px] w-full">
-            <img class="w-full desktop:w-[395px] desktop:h-[395px] desktop:top-[60%] desktop:right-[37%]  desktop:absolute" src="./public/image/responsibility-golestan.jpg" alt="">
+          <div
+            class="responsibility__img mb-[70px] desktop:mb-[30px] desktop:h-[300px] w-full"
+          >
+            <img
+              class="w-full desktop:w-[395px] desktop:h-[395px] desktop:top-[60%] desktop:right-[37%] desktop:absolute"
+              src="./public/image/responsibility-golestan.jpg"
+              alt=""
+            />
           </div>
         </div>
-        <hr class="mobile:hidden desktop:block w-11/12 mx-auto  text-[#4a4a4a]" />
+        <hr
+          class="mobile:hidden desktop:block w-11/12 mx-auto text-[#4a4a4a]"
+        />
 
-        <div class="res-end w-full desktop:w-[700px] desktop:mx-auto desktop:mt-[170px]">
-          <h1 class="mr-[10px] mb-[20px] text-[22px] text-[--golcolor] text-right font-semibold">مسئوليت‌های اجتماعی گلستان</h1>
-        <h2  class="text-[--font-color] text-[19px] font-thin leading-9 text-justify mb-[40px] mx-[10px] mt-[10px]">كسب‌وكارها اجزای قدرتمند جامعه به شمار می‌آیند و موفق‌ترین، قابل‌احترام‌ترین و مطلوب‌ترین كسب‌وكارها آنهایی هستند كه كاری فراتر از درآمدزایی ایجاد كنند؛‌ آنهایی كه آمده‌اند تا از تجربه و امکاناتشان برای حل مشكلات جامعه و محیط زندگی خود استفاده كنند. <span class="text-[--golcolor]">گلستان</span> در فعالیت‌های‌ اجتماعی خود،‌ گسترده وسیعی از فعالیت‌های عام‌المنفعه را در دستوركار خود قرار داده است.</h2>
-        <div class="res__bottun w-full pr-[10px] mb-[60px]">
-          <a class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#7c7d7e] border-solid  py-[5px] px-[24px]" href="#">اطلاعات بیشتر</a>
+        <div
+          class="res-end w-full desktop:w-[700px] desktop:mx-auto desktop:mt-[170px]"
+        >
+          <h1
+            class="mr-[10px] mb-[20px] text-[22px] text-[--golcolor] text-right font-semibold"
+          >
+            مسئوليت‌های اجتماعی گلستان
+          </h1>
+          <h2
+            class="text-[--font-color] text-[19px] font-thin leading-9 text-justify mb-[40px] mx-[10px] mt-[10px]"
+          >
+            كسب‌وكارها اجزای قدرتمند جامعه به شمار می‌آیند و موفق‌ترین،
+            قابل‌احترام‌ترین و مطلوب‌ترین كسب‌وكارها آنهایی هستند كه كاری فراتر
+            از درآمدزایی ایجاد كنند؛‌ آنهایی كه آمده‌اند تا از تجربه و
+            امکاناتشان برای حل مشكلات جامعه و محیط زندگی خود استفاده كنند.
+            <span class="text-[--golcolor]">گلستان</span> در فعالیت‌های‌ اجتماعی
+            خود،‌ گسترده وسیعی از فعالیت‌های عام‌المنفعه را در دستوركار خود قرار
+            داده است.
+          </h2>
+          <div class="res__bottun w-full pr-[10px] mb-[60px]">
+            <a
+              class="text-[--font-color] text-[18px] font-thin rounded-lg border border-[#7c7d7e] border-solid py-[5px] px-[24px]"
+              href="#"
+              >اطلاعات بیشتر</a
+            >
+          </div>
         </div>
-        </div>
-
       </div>
       <!--end-sociality-->
-       <!--make-footer-->
-       <footer class="w-full">
+      <!--make-footer-->
+      <footer class="w-full">
         <!--make-sponsors-->
-        <div class="sponsors w-full flex justify-center dark:bg-gray-600 bg-[#EEEFEF] gap-x-px py-[10px] ">
-          <a  href="#" class="sponsors__item w-[55px] h-[53px] rounded-[50%] inline-block "></a>
-          <a href="#" class="sponsors__item2 w-[55px] h-[53px] rounded-[50%] inline-block "></a>
-          <a href="#" class="sponsors__item3 w-[55px] h-[53px] rounded-[50%] inline-block "></a>
-          <a href="#" class="sponsors__item4 w-[55px] h-[53px] rounded-[50%] inline-block "></a>
-          <a href="#" class="sponsors__item5 w-[55px] h-[53px] rounded-[50%] inline-block "></a>
-          <a href="#" class="sponsors__item6 w-[55px] h-[53px] rounded-[50%] inline-block "></a>
+        <div
+          class="sponsors w-full flex justify-center dark:bg-gray-600 bg-[#EEEFEF] gap-x-px py-[10px]"
+        >
+          <a
+            href="#"
+            class="sponsors__item w-[55px] h-[53px] rounded-[50%] inline-block"
+          ></a>
+          <a
+            href="#"
+            class="sponsors__item2 w-[55px] h-[53px] rounded-[50%] inline-block"
+          ></a>
+          <a
+            href="#"
+            class="sponsors__item3 w-[55px] h-[53px] rounded-[50%] inline-block"
+          ></a>
+          <a
+            href="#"
+            class="sponsors__item4 w-[55px] h-[53px] rounded-[50%] inline-block"
+          ></a>
+          <a
+            href="#"
+            class="sponsors__item5 w-[55px] h-[53px] rounded-[50%] inline-block"
+          ></a>
+          <a
+            href="#"
+            class="sponsors__item6 w-[55px] h-[53px] rounded-[50%] inline-block"
+          ></a>
         </div>
         <!--end-sponsors-->
         <div class="hr2 w-full h-[25px] bg-[#ED1C24]"></div>
         <div class="footer__bottum w-full p-[15px]">
-          <div class="wrapper__footer">
-            
-          </div>
+          <div class="wrapper__footer"></div>
         </div>
         <!-- products start -->
-        <div class="flex desktop:flex-row flex-col justify-center items-center bg-[--bgcolor] desktop:gap-3  text-white">
+        <div
+          class="flex desktop:flex-row flex-col justify-center items-center bg-[--bgcolor] desktop:gap-3 text-white"
+        >
           <!-- product 1 start -->
-          <div class="flex flex-col justify-center text-center w-11/12 desktop:w-[155px]">
+          <div
+            class="flex flex-col justify-center text-center w-11/12 desktop:w-[155px]"
+          >
             <div class="flex justify-center items-center">
-              <img src="./public/image/footerTEA-golestan.png" alt="tea">
+              <img src="./public/image/footerTEA-golestan.png" alt="tea" />
             </div>
-            <hr class="my-[5px]">
+            <hr class="my-[5px]" />
             <h4 class="text-[20px]">چای گلستان</h4>
-            <hr class="my-[5px]">
+            <hr class="my-[5px]" />
             <ul class="desktop:text-right mt-[15px]">
-              <li class="text-[18px] text-gray-400 cursor-pointer">چای ممتاز هندوستان</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">چای ممتاز ارل گری</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">چای سیلان عطری</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">چای سیلان</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">چای صبحانه گلستان</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                چای ممتاز هندوستان
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                چای ممتاز ارل گری
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                چای سیلان عطری
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                چای سیلان
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                چای صبحانه گلستان
+              </li>
             </ul>
           </div>
           <!-- product 1 end -->
           <!-- product 2 start -->
-          <div class="flex flex-col justify-center text-center w-11/12 desktop:w-[155px]">
+          <div
+            class="flex flex-col justify-center text-center w-11/12 desktop:w-[155px]"
+          >
             <div class="flex justify-center items-center">
-              <img src="./public/image/footer-icon4.png" alt="tea">
+              <img src="./public/image/footer-icon4.png" alt="tea" />
             </div>
-            <hr class="my-[5px]">
+            <hr class="my-[5px]" />
             <h4 class="text-[20px]">تی بگ گلستان</h4>
-            <hr class="my-[5px]">
+            <hr class="my-[5px]" />
             <ul class="desktop:text-right mt-[15px]">
-              <li class="text-[18px] text-gray-400 cursor-pointer">تی بگ بلک لاین</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">تی بگ ارل گری</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">دمنوش نعناع</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">دمنوش بابونه</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">دمنوش چای سبز</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                تی بگ بلک لاین
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                تی بگ ارل گری
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                دمنوش نعناع
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                دمنوش بابونه
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                دمنوش چای سبز
+              </li>
             </ul>
           </div>
           <!-- product 2 end -->
           <!-- product 3 start -->
-          <div class="flex flex-col justify-center text-center w-11/12 desktop:w-[155px]">
+          <div
+            class="flex flex-col justify-center text-center w-11/12 desktop:w-[155px]"
+          >
             <div class="flex justify-center items-center">
-              <img src="./public/image/footer-icon3.png" alt="tea">
+              <img src="./public/image/footer-icon3.png" alt="tea" />
             </div>
-            <hr class="my-[5px]">
+            <hr class="my-[5px]" />
             <h4 class="text-[20px]">ادویه گلستان</h4>
-            <hr class="my-[5px]">
+            <hr class="my-[5px]" />
             <ul class="desktop:text-right mt-[15px]">
-              <li class="text-[18px] text-gray-400 cursor-pointer">زعفران ممتاز خراسان</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">ادویه کاری</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">ادویه ماست و خیار</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">فلفل سیاه خالص</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">زردچوبه ممتاز</li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                زعفران ممتاز خراسان
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                ادویه کاری
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                ادویه ماست و خیار
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                فلفل سیاه خالص
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                زردچوبه ممتاز
+              </li>
             </ul>
           </div>
           <!-- product 3 end -->
           <!-- product 4 start -->
-          <div class="flex flex-col justify-center text-center w-11/12 desktop:w-[155px]">
+          <div
+            class="flex flex-col justify-center text-center w-11/12 desktop:w-[155px]"
+          >
             <div class="flex justify-center items-center">
-              <img src="./public/image/footer-icon2.png" alt="tea">
+              <img src="./public/image/footer-icon2.png" alt="tea" />
             </div>
-            <hr class="my-[5px]">
+            <hr class="my-[5px]" />
             <h4 class="text-[20px]">حبوبات گلستان</h4>
-            <hr class="my-[5px]">
-            <ul class="desktop:text-right mt-[15px] ">
-              <li class="text-[18px] text-gray-400 cursor-pointer">لوبیا قرمز ممتاز</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">لوبیا چیتی گلستان</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">عدس کانادایی</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">نخود زودپز کرمانشاه</li>
-              <li class="text-[18px] text-gray-400 cursor-pointer">لوبیا سفید گلستان</li>
+            <hr class="my-[5px]" />
+            <ul class="desktop:text-right mt-[15px]">
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                لوبیا قرمز ممتاز
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                لوبیا چیتی گلستان
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                عدس کانادایی
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                نخود زودپز کرمانشاه
+              </li>
+              <li class="text-[18px] text-gray-400 cursor-pointer">
+                لوبیا سفید گلستان
+              </li>
             </ul>
           </div>
           <!-- product 4 end -->
-          </div>
+        </div>
         <!-- products end -->
         <!--make-cr-->
-        <div class="cr w-full  bg-[--bgcolor] flex flex-col justify-center py-[50px] ">
-          <span class="w-full text-[18px] text-gray-300 text-center">All Right Reserved Golestan Company 2022-2025</span>
-          <span class="text-[12px] text-gray-400 text-center w-full">Designed By: Golestan Studio</span>
+        <div
+          class="cr w-full bg-[--bgcolor] flex flex-col justify-center py-[50px]"
+        >
+          <span class="w-full text-[18px] text-gray-300 text-center"
+            >All Right Reserved Golestan Company 2022-2025</span
+          >
+          <span class="text-[12px] text-gray-400 text-center w-full"
+            >Designed By: Golestan Studio</span
+          >
         </div>
         <!--end-cr-->
       </footer>
       <!--end-footer-->
-      <a class="opacity-100 rounded-md w-[40px] h-[40px] fixed left-[20px] bottom-[20px] desktop:flex justify-center items-center" href="#"><svg class="scale-50" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m18.221 7.206 9.585 9.585a2.265 2.265 0 0 1 0 3.195l-.8.801a2.266 2.266 0 0 1-3.194 0l-7.315-7.315-7.315 7.315a2.266 2.266 0 0 1-3.194 0l-.8-.801a2.265 2.265 0 0 1 0-3.195l9.587-9.585a2.24 2.24 0 0 1 1.723-.647 2.247 2.247 0 0 1 1.723.647z" fill="#ffffff" class="fill-515151"></path></svg></a>
-      <div class="sun cursor-pointer w-[40px] h-[40px] fixed left-[50px] bottom-[20px] flex justify-center items-center"><svg fill="#ffffff" height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-83.05 -83.05 373.73 373.73" xml:space="preserve" stroke="#ffffff" stroke-width="0.00207628">
+      <a
+        class=" cursor-pointer w-[40px] h-[40px] fixed left-5  rounded bg-[--font-color] bottom-5 shadow-md hover:opacity-65 flex justify-center items-center"
+        href="#"
+        ><svg
+          class="scale-50"
+          viewBox="0 0 32 32"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m18.221 7.206 9.585 9.585a2.265 2.265 0 0 1 0 3.195l-.8.801a2.266 2.266 0 0 1-3.194 0l-7.315-7.315-7.315 7.315a2.266 2.266 0 0 1-3.194 0l-.8-.801a2.265 2.265 0 0 1 0-3.195l9.587-9.585a2.24 2.24 0 0 1 1.723-.647 2.247 2.247 0 0 1 1.723.647z"
+            fill="#ffffff"
+            class="fill-515151"
+          ></path></svg
+      ></a>
+      <div
+        class="sun cursor-pointer w-[40px] h-[40px] fixed right-5 rounded bg-[--font-color] bottom-5 shadow-md hover:opacity-65 flex justify-center items-center"
+      >
+        <svg
+          fill="#ffffff"
+          height="64px"
+          width="64px"
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="-83.05 -83.05 373.73 373.73"
+          xml:space="preserve"
+          stroke="#ffffff"
+          stroke-width="0.00207628"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-        
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-        
-        <g id="SVGRepo_iconCarrier"> <circle cx="103.814" cy="103.814" r="45.868"/> <path d="M103.814,157.183c-29.427,0-53.368-23.941-53.368-53.368s23.941-53.368,53.368-53.368s53.368,23.941,53.368,53.368 S133.241,157.183,103.814,157.183z M103.814,65.446c-21.156,0-38.368,17.212-38.368,38.368s17.212,38.368,38.368,38.368 s38.368-17.212,38.368-38.368S124.97,65.446,103.814,65.446z"/> <path d="M103.814,39.385c-4.142,0-7.5-3.358-7.5-7.5V7.5c0-4.142,3.358-7.5,7.5-7.5s7.5,3.358,7.5,7.5v24.385 C111.314,36.027,107.956,39.385,103.814,39.385z"/> <path d="M103.814,207.628c-4.142,0-7.5-3.358-7.5-7.5v-24.385c0-4.142,3.358-7.5,7.5-7.5s7.5,3.358,7.5,7.5v24.385 C111.314,204.271,107.956,207.628,103.814,207.628z"/> <path d="M200.128,111.314h-24.385c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h24.385c4.142,0,7.5,3.358,7.5,7.5 S204.271,111.314,200.128,111.314z"/> <path d="M31.885,111.314H7.5c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h24.385c4.142,0,7.5,3.358,7.5,7.5 S36.027,111.314,31.885,111.314z"/> <path d="M154.676,60.452c-1.919,0-3.839-0.732-5.303-2.197c-2.929-2.929-2.929-7.678,0-10.606l17.243-17.242 c2.929-2.929,7.678-2.93,10.606,0c2.929,2.929,2.929,7.678,0,10.606l-17.243,17.242C158.515,59.72,156.595,60.452,154.676,60.452z"/> <path d="M35.709,179.419c-1.919,0-3.839-0.732-5.303-2.197c-2.929-2.929-2.929-7.678,0-10.606l17.243-17.243 c2.929-2.929,7.678-2.929,10.606,0c2.929,2.929,2.929,7.678,0,10.606l-17.243,17.243C39.548,178.687,37.629,179.419,35.709,179.419z "/> <path d="M171.918,179.419c-1.919,0-3.839-0.732-5.303-2.197l-17.243-17.243c-2.929-2.929-2.929-7.678,0-10.606 c2.929-2.929,7.678-2.929,10.606,0l17.243,17.243c2.929,2.929,2.929,7.678,0,10.606 C175.757,178.687,173.838,179.419,171.918,179.419z"/> <path d="M52.952,60.452c-1.919,0-3.839-0.732-5.303-2.197L30.406,41.013c-2.929-2.929-2.929-7.677,0-10.606 c2.929-2.929,7.678-2.93,10.606,0l17.243,17.242c2.929,2.929,2.929,7.677,0,10.606C56.791,59.72,54.872,60.452,52.952,60.452z"/> </g>
-        
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+          <g id="SVGRepo_iconCarrier">
+            <circle cx="103.814" cy="103.814" r="45.868" />
+            <path
+              d="M103.814,157.183c-29.427,0-53.368-23.941-53.368-53.368s23.941-53.368,53.368-53.368s53.368,23.941,53.368,53.368 S133.241,157.183,103.814,157.183z M103.814,65.446c-21.156,0-38.368,17.212-38.368,38.368s17.212,38.368,38.368,38.368 s38.368-17.212,38.368-38.368S124.97,65.446,103.814,65.446z"
+            />
+            <path
+              d="M103.814,39.385c-4.142,0-7.5-3.358-7.5-7.5V7.5c0-4.142,3.358-7.5,7.5-7.5s7.5,3.358,7.5,7.5v24.385 C111.314,36.027,107.956,39.385,103.814,39.385z"
+            />
+            <path
+              d="M103.814,207.628c-4.142,0-7.5-3.358-7.5-7.5v-24.385c0-4.142,3.358-7.5,7.5-7.5s7.5,3.358,7.5,7.5v24.385 C111.314,204.271,107.956,207.628,103.814,207.628z"
+            />
+            <path
+              d="M200.128,111.314h-24.385c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h24.385c4.142,0,7.5,3.358,7.5,7.5 S204.271,111.314,200.128,111.314z"
+            />
+            <path
+              d="M31.885,111.314H7.5c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h24.385c4.142,0,7.5,3.358,7.5,7.5 S36.027,111.314,31.885,111.314z"
+            />
+            <path
+              d="M154.676,60.452c-1.919,0-3.839-0.732-5.303-2.197c-2.929-2.929-2.929-7.678,0-10.606l17.243-17.242 c2.929-2.929,7.678-2.93,10.606,0c2.929,2.929,2.929,7.678,0,10.606l-17.243,17.242C158.515,59.72,156.595,60.452,154.676,60.452z"
+            />
+            <path
+              d="M35.709,179.419c-1.919,0-3.839-0.732-5.303-2.197c-2.929-2.929-2.929-7.678,0-10.606l17.243-17.243 c2.929-2.929,7.678-2.929,10.606,0c2.929,2.929,2.929,7.678,0,10.606l-17.243,17.243C39.548,178.687,37.629,179.419,35.709,179.419z "
+            />
+            <path
+              d="M171.918,179.419c-1.919,0-3.839-0.732-5.303-2.197l-17.243-17.243c-2.929-2.929-2.929-7.678,0-10.606 c2.929-2.929,7.678-2.929,10.606,0l17.243,17.243c2.929,2.929,2.929,7.678,0,10.606 C175.757,178.687,173.838,179.419,171.918,179.419z"
+            />
+            <path
+              d="M52.952,60.452c-1.919,0-3.839-0.732-5.303-2.197L30.406,41.013c-2.929-2.929-2.929-7.677,0-10.606 c2.929-2.929,7.678-2.93,10.606,0l17.243,17.242c2.929,2.929,2.929,7.677,0,10.606C56.791,59.72,54.872,60.452,52.952,60.452z"
+            />
+          </g>
         </svg>
-        
       </div>
-      <div class="moon cursor-pointer w-[40px] h-[40px] fixed left-[60px] bottom-[20px] flex justify-center items-center"><svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div
+        class="moon cursor-pointer w-[40px] h-[40px] fixed right-5 rounded bg-[--font-color] bottom-5 shadow-md hover:opacity-65 flex justify-center items-center "
+      >
+        <svg
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-        
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-        
-        <g id="SVGRepo_iconCarrier"> <path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
-        
-        </svg></div>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
+      </div>
     </div>
     <!--end-wrapper-->
-    
 
     <script src="./public/js/main.js"></script>
   </body>
