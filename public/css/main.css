@@ -1458,6 +1458,10 @@ html::-webkit-scrlollbar{
 }
 
 @media (min-width: 0px) {
+  .mobile\:top-\[70\%\] {
+    top: 70%;
+  }
+
   .mobile\:mb-\[30px\] {
     margin-bottom: 30px;
   }
@@ -1540,14 +1544,49 @@ html::-webkit-scrlollbar{
     top: 60%;
   }
 
+  .desktop\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .desktop\:top-\[\] {
+    top: ;
+  }
+
+  .desktop\:top-\[100\] {
+    top: 100;
+  }
+
+  .desktop\:top-\[100\%\] {
+    top: 100%;
+  }
+
+  .desktop\:top-\[0\%\] {
+    top: 0%;
+  }
+
+  .desktop\:top-\[90\%\] {
+    top: 90%;
+  }
+
+  .desktop\:top-\[80\%\] {
+    top: 80%;
+  }
+
+  .desktop\:top-\[8\%\] {
+    top: 8%;
+  }
+
+  .desktop\:top-\[85\%\] {
+    top: 85%;
+  }
+
+  .desktop\:top-\[84\%\] {
+    top: 84%;
+  }
+
   .desktop\:mx-auto {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .desktop\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
   }
 
   .desktop\:mb-\[10px\] {
@@ -1634,6 +1673,10 @@ html::-webkit-scrlollbar{
     height: 100%;
   }
 
+  .desktop\:w-\[1000px\] {
+    width: 1000px;
+  }
+
   .desktop\:w-\[155px\] {
     width: 155px;
   }
@@ -1682,54 +1725,6 @@ html::-webkit-scrlollbar{
     width: 100%;
   }
 
-  .desktop\:w-\[\] {
-    width: ;
-  }
-
-  .desktop\:w-\[990pc\] {
-    width: 990pc;
-  }
-
-  .desktop\:w-\[990px\] {
-    width: 990px;
-  }
-
-  .desktop\:w-\[px\] {
-    width: px;
-  }
-
-  .desktop\:w-\[1000px\] {
-    width: 1000px;
-  }
-
-  .desktop\:w-\[1010px\] {
-    width: 1010px;
-  }
-
-  .desktop\:w-\[10200px\] {
-    width: 10200px;
-  }
-
-  .desktop\:w-\[1020px\] {
-    width: 1020px;
-  }
-
-  .desktop\:w-\[100px\] {
-    width: 100px;
-  }
-
-  .desktop\:w-\[1030px\] {
-    width: 1030px;
-  }
-
-  .desktop\:w-\[1040px\] {
-    width: 1040px;
-  }
-
-  .desktop\:w-\[10\`0px\] {
-    width: 10`0px;
-  }
-
   .desktop\:flex-row {
     flex-direction: row;
   }
@@ -1754,20 +1749,16 @@ html::-webkit-scrlollbar{
     justify-content: space-between;
   }
 
+  .desktop\:gap-1 {
+    gap: 0.25rem;
+  }
+
   .desktop\:gap-3 {
     gap: 0.75rem;
   }
 
   .desktop\:gap-4 {
     gap: 1rem;
-  }
-
-  .desktop\:gap-2 {
-    gap: 0.5rem;
-  }
-
-  .desktop\:gap-1 {
-    gap: 0.25rem;
   }
 
   .desktop\:bg-\[\#E9D69F\] {
@@ -1784,6 +1775,11 @@ html::-webkit-scrlollbar{
     padding: 0px;
   }
 
+  .desktop\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .desktop\:px-\[270px\] {
     padding-left: 270px;
     padding-right: 270px;
@@ -1792,11 +1788,6 @@ html::-webkit-scrlollbar{
   .desktop\:px-\[60px\] {
     padding-left: 60px;
     padding-right: 60px;
-  }
-
-  .desktop\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .desktop\:pb-\[20px\] {
